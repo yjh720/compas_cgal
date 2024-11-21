@@ -113,7 +113,7 @@ class BuildExt(build_ext):
     """A custom build extension for adding compiler-specific options."""
 
     c_opts = {
-        "msvc": ["/EHsc", "/std:c++20"],
+        "msvc": ["/EHsc", "/std:c++20", "/utf-8"],
         "unix": [],
     }
     l_opts = {
